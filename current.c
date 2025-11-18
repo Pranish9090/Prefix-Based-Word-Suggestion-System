@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #define ALPHABET_SIZE 26
 #define FILENAME "data.txt"
@@ -172,7 +173,6 @@ void loadTrieFromText() {
     printf("Loaded %d words from %s\n", count, FILENAME);
 }
 
-#include <ctype.h>  // add at top for isdigit()
 
 int main() {
     root = createNode();
