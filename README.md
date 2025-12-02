@@ -7,7 +7,6 @@ It simulates how modern search engines and text boxes suggest completions as you
 
 This program loads word data from a text file, lets users search and add new words, shows ranked suggestions, and safely saves updates back to disk.
 
----
 
 ## ⚙️ Features
 
@@ -34,7 +33,6 @@ This program loads word data from a text file, lets users search and add new wor
 * **🧠 Memory-Efficient Design**
   Shares prefixes efficiently through the Trie, reducing redundant memory use.
 
----
 
 ## 🧩 Data Structure
 
@@ -54,7 +52,6 @@ struct TrieNode {
 * Words sharing prefixes share nodes (e.g., *pro* in *program*, *project*).
 * Frequencies are incremented whenever a user selects that word.
 
----
 
 ## 📂 Data Storage Format
 
@@ -71,7 +68,6 @@ project 3
 Each line = `word frequency`
 This makes the dataset human-readable and easy to edit.
 
----
 
 ## 🧱 Core Functions
 
@@ -87,7 +83,6 @@ This makes the dataset human-readable and easy to edit.
 | `displayAllWords()`          | Prints all stored words and their frequencies |
 | `menu()`                     | Interactive main menu loop for user actions   |
 
----
 
 ## 💻 Example Program Flow
 
@@ -112,7 +107,6 @@ Select a word: project
 💾 Data saved successfully!
 ```
 
----
 
 ## 🚀 How to Run
 
@@ -140,7 +134,6 @@ approach 1
 ./trie_search
 ```
 
----
 
 ## 🧰 Error Handling & Safety
 
@@ -149,7 +142,6 @@ approach 1
 * If saving fails, the previous dataset is automatically backed up.
 * If the dataset is empty, the program still runs and allows adding new words.
 
----
 
 ## 🧩 Upcoming Improvements
 
@@ -161,7 +153,6 @@ approach 1
 * **Interactive GUI or Web Interface** using the same logic
 * **Compressed Trie (Radix Tree)** for very large data
 
----
 
 ## 🧠 Technical Notes
 
@@ -169,7 +160,6 @@ approach 1
 * If your dataset includes digits or symbols, they will be ignored during loading.
 * Trie depth limit is 100 characters per word (configurable).
 
----
 
 ## 👨‍💻 Author
 
@@ -178,7 +168,6 @@ Role: Android & Web Developer
 
 Project: *Search Suggestion System using Trie Data Structure (C)*
 
----
 
 ## 🏷️ Repository Tags
 
